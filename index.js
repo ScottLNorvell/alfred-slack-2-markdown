@@ -3,8 +3,6 @@ require('dotenv').config();
 const alfy = require('alfy');
 const { WebClient } = require('@slack/web-api');
 
-
-
 const getUrl = (value, emojis) => {
 	if (/alias:/.test(value)) {
 		return emojis[value.split(':')[1]];
