@@ -8,6 +8,19 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>3194CFE9-FD86-41CC-B409-E7C83B4CB237</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C93FA1F4-3E23-49AF-9CDC-E0E2910EFB3C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>36ED1615-E7AA-4B46-8117-AE1A51394681</key>
 		<array>
 			<dict>
@@ -26,6 +39,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>61CC21BA-9A82-4C43-B3B2-BD6B4ECE71EC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C93FA1F4-3E23-49AF-9CDC-E0E2910EFB3C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>533B11A2-31F1-45DB-A627-B85C15C2DC48</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -127,27 +153,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alignment</key>
-				<integer>0</integer>
-				<key>backgroundcolor</key>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>smdu</string>
+				<key>subtext</key>
 				<string></string>
-				<key>fadespeed</key>
-				<integer>0</integer>
-				<key>fillmode</key>
-				<integer>0</integer>
-				<key>font</key>
-				<string></string>
-				<key>largetypetext</key>
-				<string>UPDATED!</string>
-				<key>textcolor</key>
-				<string></string>
+				<key>text</key>
+				<string>Update Slack Emojis</string>
+				<key>withspace</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.largetype</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>8BC9D902-58D7-4CBD-BF92-9D68385B92EE</string>
+			<string>D0BFA19E-6BF8-49B0-AE9D-E88B11311F0F</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -175,21 +197,94 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>smdu</string>
-				<key>subtext</key>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
 				<string></string>
-				<key>text</key>
-				<string>Update Slack Emojis</string>
-				<key>withspace</key>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>largetypetext</key>
+				<string>UPDATED!</string>
+				<key>textcolor</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>8BC9D902-58D7-4CBD-BF92-9D68385B92EE</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>largetypetext</key>
+				<string>CONFIGURED!</string>
+				<key>textcolor</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>533B11A2-31F1-45DB-A627-B85C15C2DC48</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
 				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node config.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C93FA1F4-3E23-49AF-9CDC-E0E2910EFB3C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>smdc</string>
+				<key>subtext</key>
+				<string>(enter your oauth token)</string>
+				<key>text</key>
+				<string>Configure Slack Emoji</string>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>D0BFA19E-6BF8-49B0-AE9D-E88B11311F0F</string>
+			<string>3194CFE9-FD86-41CC-B409-E7C83B4CB237</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -198,40 +293,61 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>3194CFE9-FD86-41CC-B409-E7C83B4CB237</key>
+		<dict>
+			<key>xpos</key>
+			<integer>55</integer>
+			<key>ypos</key>
+			<integer>425</integer>
+		</dict>
 		<key>36ED1615-E7AA-4B46-8117-AE1A51394681</key>
 		<dict>
 			<key>xpos</key>
-			<integer>340</integer>
+			<integer>275</integer>
 			<key>ypos</key>
-			<integer>350</integer>
+			<integer>220</integer>
+		</dict>
+		<key>533B11A2-31F1-45DB-A627-B85C15C2DC48</key>
+		<dict>
+			<key>xpos</key>
+			<integer>480</integer>
+			<key>ypos</key>
+			<integer>410</integer>
 		</dict>
 		<key>61CC21BA-9A82-4C43-B3B2-BD6B4ECE71EC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>330</integer>
+			<integer>260</integer>
 			<key>ypos</key>
-			<integer>175</integer>
+			<integer>20</integer>
 		</dict>
 		<key>773DAF93-AFA3-49DC-AF30-DCB562E5E425</key>
 		<dict>
 			<key>xpos</key>
-			<integer>80</integer>
+			<integer>75</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>25</integer>
 		</dict>
 		<key>8BC9D902-58D7-4CBD-BF92-9D68385B92EE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>565</integer>
+			<integer>460</integer>
 			<key>ypos</key>
-			<integer>345</integer>
+			<integer>220</integer>
+		</dict>
+		<key>C93FA1F4-3E23-49AF-9CDC-E0E2910EFB3C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>420</integer>
 		</dict>
 		<key>D0BFA19E-6BF8-49B0-AE9D-E88B11311F0F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>80</integer>
+			<integer>60</integer>
 			<key>ypos</key>
-			<integer>355</integer>
+			<integer>205</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
