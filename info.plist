@@ -12,7 +12,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>9EE86E36-A729-4F5C-81C4-48ECCD0412C6</string>
+				<string>61CC21BA-9A82-4C43-B3B2-BD6B4ECE71EC</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -22,6 +22,10 @@
 			</dict>
 		</array>
 	</dict>
+	<key>createdby</key>
+	<string></string>
+	<key>description</key>
+	<string></string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -31,21 +35,19 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
+				<key>autopaste</key>
 				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>9EE86E36-A729-4F5C-81C4-48ECCD0412C6</string>
+			<string>61CC21BA-9A82-4C43-B3B2-BD6B4ECE71EC</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -63,7 +65,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>slack-2-markdown</string>
+				<string>stmd</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -83,7 +85,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Slackmoji -&gt; Markdown</string>
+				<string>Slackmoji 2 Markdown</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -101,6 +103,13 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>61CC21BA-9A82-4C43-B3B2-BD6B4ECE71EC</key>
+		<dict>
+			<key>xpos</key>
+			<integer>330</integer>
+			<key>ypos</key>
+			<integer>175</integer>
+		</dict>
 		<key>773DAF93-AFA3-49DC-AF30-DCB562E5E425</key>
 		<dict>
 			<key>xpos</key>
@@ -108,13 +117,8 @@
 			<key>ypos</key>
 			<integer>190</integer>
 		</dict>
-		<key>9EE86E36-A729-4F5C-81C4-48ECCD0412C6</key>
-		<dict>
-			<key>xpos</key>
-			<integer>365</integer>
-			<key>ypos</key>
-			<integer>110</integer>
-		</dict>
 	</dict>
+	<key>webaddress</key>
+	<string></string>
 </dict>
 </plist>
