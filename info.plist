@@ -8,11 +8,37 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>36ED1615-E7AA-4B46-8117-AE1A51394681</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8BC9D902-58D7-4CBD-BF92-9D68385B92EE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>773DAF93-AFA3-49DC-AF30-DCB562E5E425</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>61CC21BA-9A82-4C43-B3B2-BD6B4ECE71EC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D0BFA19E-6BF8-49B0-AE9D-E88B11311F0F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>36ED1615-E7AA-4B46-8117-AE1A51394681</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -98,11 +124,87 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>largetypetext</key>
+				<string>UPDATED!</string>
+				<key>textcolor</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>8BC9D902-58D7-4CBD-BF92-9D68385B92EE</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node dl.js</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>36ED1615-E7AA-4B46-8117-AE1A51394681</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>smdu</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Update Slack Emojis</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>D0BFA19E-6BF8-49B0-AE9D-E88B11311F0F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>36ED1615-E7AA-4B46-8117-AE1A51394681</key>
+		<dict>
+			<key>xpos</key>
+			<integer>340</integer>
+			<key>ypos</key>
+			<integer>350</integer>
+		</dict>
 		<key>61CC21BA-9A82-4C43-B3B2-BD6B4ECE71EC</key>
 		<dict>
 			<key>xpos</key>
@@ -116,6 +218,20 @@
 			<integer>80</integer>
 			<key>ypos</key>
 			<integer>190</integer>
+		</dict>
+		<key>8BC9D902-58D7-4CBD-BF92-9D68385B92EE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>565</integer>
+			<key>ypos</key>
+			<integer>345</integer>
+		</dict>
+		<key>D0BFA19E-6BF8-49B0-AE9D-E88B11311F0F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>80</integer>
+			<key>ypos</key>
+			<integer>355</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
