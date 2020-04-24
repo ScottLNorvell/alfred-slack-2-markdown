@@ -1,16 +1,28 @@
-# alfred-slack-2-markdown [![Build Status](https://travis-ci.org/scottlnorvell/alfred-slack-2-markdown.svg?branch=master)](https://travis-ci.org/scottlnorvell/alfred-slack-2-markdown)
+# alfred-slack-2-markdown
 
 > Slack emojis to markdown
 
+An alfred plugin that allows you to use your custom slack emojis from your organization in markdown.
+
+This is excellent for extending slack fun to places where markdown is supported (like github!)
+
+Turns a slack emoji like this one:
+
+![maracasparrot](https://emoji.slack-edge.com/T024K2ND8/maracasparrot/8b9f329f0b958fbb.gif)
+
+Into a usable string:
+
+```markdown
+![maracasparrot](https://emoji.slack-edge.com/T024K2ND8/maracasparrot/8b9f329f0b958fbb.gif)
+```
+
+Copying into your clipboard and pasting into the focused window!
 
 ## Install
 
-```
-$ npm install --global alfred-slack-2-markdown
-```
+You can install from the [latest release](https://github.com/ScottLNorvell/alfred-slack-2-markdown/releases/tag/v0.2.0).
 
-*Requires [Node.js](https://nodejs.org) 4+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
-
+*Requires [Node.js](https://nodejs.org) 10+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
 
 ## Configuration
 
@@ -31,6 +43,8 @@ you will periodically need to download all of the _new_ emojis that your team ad
 - In Alfred, type `smdu`, <kbd>Space</kbd>
 - You'll see a huge screen saying `UPDATED`
 - That's it!
+
+> NOTE: it takes kind of a long time the first time you do it. (assuming you have a lot of emojis in your org)
 
 
 

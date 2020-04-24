@@ -1,7 +1,6 @@
 
 require('dotenv').config();
 const fs = require('fs').promises;
-const fsnp = require('fs');
 const { WebClient } = require('@slack/web-api');
 const download = require('download');
 
