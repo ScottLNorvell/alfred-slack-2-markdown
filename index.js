@@ -14,7 +14,7 @@ const getIconPath = url => {
 	const parts = url.split('/');
 	const file = parts.pop();
 	const folder = parts.pop();
-	return `./emojis/${folder}/${file}`;
+	return `./.emojis/${folder}/${file}`;
 };
 
 const filterEmoji = (input, emojis) => {
