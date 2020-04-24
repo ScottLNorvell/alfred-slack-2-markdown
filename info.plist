@@ -4,8 +4,6 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.scottlnorvell.slack-2-markdown</string>
-	<key>category</key>
-	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>3194CFE9-FD86-41CC-B409-E7C83B4CB237</key>
@@ -75,9 +73,9 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string></string>
+	<string>Scottlnorvell</string>
 	<key>description</key>
-	<string></string>
+	<string>Amazing Workflow to use your SLACK emojis in markdown</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -290,7 +288,43 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string># alfred-slack-2-markdown [![Build Status](https://travis-ci.org/scottlnorvell/alfred-slack-2-markdown.svg?branch=master)](https://travis-ci.org/scottlnorvell/alfred-slack-2-markdown)
+
+&gt; Slack emojis to markdown
+
+
+## Install
+
+```
+$ npm install --global alfred-slack-2-markdown
+```
+
+*Requires [Node.js](https://nodejs.org) 4+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
+
+
+## Configuration
+
+- Obtain an api token for your slack group with the `emoji:read` permissions. (see [here](https://api.slack.com/methods/emoji.list))
+- In alfred type `smdc`, &lt;kbd&gt;Space&lt;/kbd&gt;, and then paste in your slack api key.
+
+## Usage
+
+In Alfred, type `smd`, &lt;kbd&gt;Space&lt;/kbd&gt;, and then start searching emojis.
+
+
+## Troubleshooting
+### I can't see the pictures 😿
+For some reason, alfred can only display images from your computer.
+There is an initial setup to download all of the current emojis, and
+you will periodically need to download all of the _new_ emojis that your team adds. To do this:
+
+- In Alfred, type `smdu`, &lt;kbd&gt;Space&lt;/kbd&gt;
+- You'll see a huge screen saying `UPDATED`
+- That's it!
+
+
+
+## License</string>
 	<key>uidata</key>
 	<dict>
 		<key>3194CFE9-FD86-41CC-B409-E7C83B4CB237</key>
@@ -350,6 +384,10 @@
 			<integer>205</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>0.1.0</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
